@@ -1,6 +1,7 @@
-# kp-system-tech-check/kp-system-tech-check
+# Tech-check for KP system
 
-
+This is a solution for the tech check given to me (Niklas Höglund) from the company KP System. 
+For future reference the task description can be found in the docs catalog [`Kodprov KP System_2024.pdf`)](./docs/Kodprov KP System_2024.pdf)
 
 ## Getting Started
 
