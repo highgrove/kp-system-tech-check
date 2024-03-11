@@ -1,0 +1,21 @@
+{
+	"name": "tech-check-vaxjo",
+	"scripts": {
+		"ancient": "clojure -Sdeps '{:deps {com.github.liquidz/antq {:mvn/version \"RELEASE\"}}}' -m antq.core",
+		"watch": "npx shadow-cljs watch app browser-test karma-test",
+		"release": "npx shadow-cljs release app",
+		"build-report": "npx shadow-cljs run shadow.cljs.build-report app target/build-report.html",
+		"tailwind:build": "tailwindcss -i src/cljs/main/kp/tech_check/app.css -o ./resources/public/app.css",
+		"tailwind:watch": "tailwindcss -i src/cljs/main/kp/tech_check/app.css -o ./resources/public/app.css --watch",
+		"tailwind:release": "tailwindcss -o ./resources/public/app.css --minify"
+	},
+	"dependencies": {
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"google-map-react": "2.2.1"
+	},
+	"devDependencies": {
+		"shadow-cljs": "2.26.2",
+		"tailwindcss": "3.4.1"
+	}
+}

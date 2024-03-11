@@ -1,0 +1,29 @@
+{:nrepl {:port 8777}
+
+ :source-paths ["src/cljs/main" "src/cljs/test"]
+
+ :dependencies
+ [[reagent "1.1.1"]
+  [re-frame "1.4.2"]
+
+  [binaryage/devtools "1.0.6"]]
+
+ :dev-http
+ {8280 "resources/public"
+  8290 "target/browser-test"}
+
+ :builds
+ {:app
+  {:target     :browser
+   :output-dir "resources/public/js/compiled"
+   :asset-path "/js/compiled"
+   :closure-defines {kp.tech-check.config/GOOGLE_MAPS_API_KEY ""
+                     kp.tech-check.config/BACKEND_URL "http://localhost:5000"}
+   :modules
+   {:app {:init-fn kp.tech-check.core/init}}
+   :devtools
+   {:preloads []}
+   :dev
+   {:compiler-options
+    {:closure-defines
+     {}}}}}}

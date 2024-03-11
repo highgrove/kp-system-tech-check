@@ -1,0 +1,7 @@
+{:paths ["src/clj/main"]
+ :deps {io.pedestal/pedestal.service {:mvn/version "0.6.3"}
+        io.pedestal/pedestal.route {:mvn/version "0.6.3"}
+        io.pedestal/pedestal.jetty {:mvn/version "0.6.3"}
+        org.slf4j/slf4j-simple {:mvn/version "2.0.12"}
+        environ/environ {:mvn/version "1.2.0"}}
+ :aliases {:dev/backend {:main-opts ["-m" "kp.tech-check.core"]}}}

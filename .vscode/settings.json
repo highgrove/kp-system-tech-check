@@ -1,0 +1,9 @@
+{
+    "tailwindCSS.experimental.classRegex": [
+        ":class\\s+\"([^\"]*)\"",
+        ":[\\w-.#>]+\\.([\\w-]*)"
+    ],
+    "tailwindCSS.includeLanguages": {
+        "clojure": "html"
+    }
+}

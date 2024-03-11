@@ -1,0 +1,9 @@
+.nrepl-port
+.calva
+.clj-kondo
+.cpcache
+.lsp
+.shadow-cljs
+node_modules
+resources/public/js/
+resources/public/app.css
